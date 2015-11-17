@@ -1,0 +1,64 @@
+# Site wide configuration
+
+title:            Zoey's World
+locale:           en_US
+url:		  http://zoeyrae.com      
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    redcarpet
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+redcarpet:
+ syntax_highlighter: rogue
+extensions:
+ - with_toc_data
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+
+
+# Site owner
+owner:
+  name: Zoey Cluff
+  avatar: me.jpg
+  bio: "Girl on a Mission."
+  email: zoey.cluff@gmail.com
+  disqus-shortname:
+  twitter: zoeyrcluff
+  facebook: #username
+  google:
+    plus: #username
+    analytics: UA-51898388-2
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: zoeycluff
+  stackoverflow: 5549782/zoey-cluff   
+  linkedin: zoeycluff
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

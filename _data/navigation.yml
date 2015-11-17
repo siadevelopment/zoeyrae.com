@@ -1,0 +1,22 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Archive
+  url: /archive/
+
+- title: Work
+  url: /work/
+
+- title: Play
+  url: /play/
+
+- title: Project Z
+  url: /Project-Z/
+
+- title: Life
+  url: /life/
+
+- title: Soylent
+  url: /soylent/

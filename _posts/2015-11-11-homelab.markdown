@@ -1,0 +1,60 @@
+---
+layout: post
+title: Homelab
+modified:
+categories: Play
+excerpt:
+tags: [homelab, Work, Play]
+image:
+  feature: sample-image-2.jpg
+  credit: WeGraphics.com
+date: 2015-11-11T03:18:32-06:00
+---
+
+I have a nifty little homelab setup that I use to tinker with to learn on. It's nothing special, and it's definately not "production" ready, but it's fun to learn on.
+
+# Base Specs #
+
+
+- CPU: AMD FX 8320
+- Memory: 20GB (soon to be 32GB) DDR3-1600
+- GPU: AMD Radeon HD 7770 (Only GPU I had laying around that worked.)
+- Hard Drives: WD Green 2TB, WD Blue 1TB, WD Blue 500gb (Getting around to replacing them with matched drives soon)
+- OS: VMWare ESXi 6
+
+# What's on it? #
+
+![ESXI]({{ site.url }}/images/esxi.jpg)
+
+I use the ESXi box for testing for work, along with things I want to play with that can't be run locally. I'm in the process of spinning up new work VM's for prototyping to implement redundancy, and some cool projects (like redis)
+
+
+# Windows VM's:#
+
+- Two Active Directory Servers 
+- Two DNS servers
+- WSUS
+- DHCP
+
+# Linux VM's: #
+
+- pfSense to act as a router to keep things separate
+- Two DNS Servers
+- A gateway VM to work on VM's that use the pfSense router so I can copy paste (something you can't do from the ESXi console sadly)
+
+# Work Lab (Coming soon): #
+
+- Two DNS servers
+- Two Clustered MariaDB servers
+- Two nginx machines
+- HAProxy load balancer
+- Redis (on trial to see if it speeds anything up)
+- Puppet/Ansible (whatever one I pick)
+- Logstash/Kibana/Elasticsearch
+
+The work lab will eventually become production on Microsoft Azure (AWS I miss you!~). AWS is not my first pick, however Bizspark is quite nice and the Azure credits help. 
+
+
+
+
+
